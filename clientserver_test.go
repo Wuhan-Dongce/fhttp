@@ -29,9 +29,9 @@ import (
 
 	tls "github.com/refraction-networking/utls"
 
-	. "github.com/Danny-Dasilva/fhttp"
-	"github.com/Danny-Dasilva/fhttp/httptest"
-	"github.com/Danny-Dasilva/fhttp/httputil"
+	. "github.com/Wuhan-Dongce/fhttp"
+	"github.com/Wuhan-Dongce/fhttp/httptest"
+	"github.com/Wuhan-Dongce/fhttp/httputil"
 )
 
 type clientServerTest struct {

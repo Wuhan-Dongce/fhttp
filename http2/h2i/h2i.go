@@ -38,8 +38,8 @@ import (
 
 	tls "github.com/refraction-networking/utls"
 
-	"github.com/Danny-Dasilva/fhttp/http2"
-	"github.com/Danny-Dasilva/fhttp/http2/hpack"
+	"github.com/Wuhan-Dongce/fhttp/http2"
+	"github.com/Wuhan-Dongce/fhttp/http2/hpack"
 	"golang.org/x/term"
 )
 

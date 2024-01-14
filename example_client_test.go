@@ -13,8 +13,8 @@ import (
 
 	tls "github.com/refraction-networking/utls"
 
-	http "github.com/Danny-Dasilva/fhttp"
-	"github.com/Danny-Dasilva/fhttp/http2"
+	http "github.com/Wuhan-Dongce/fhttp"
+	"github.com/Wuhan-Dongce/fhttp/http2"
 )
 
 // Basic http test with Header Order + enable push
