@@ -1744,6 +1744,10 @@ func (cc *ClientConn) encodeHeaders(req *http.Request, trailers string, contentL
 		}
 	}
 
+	if _, ok := req.Header["Host"]; ok {
+		host = req.Header.Get("Host")
+	}
+
 	// Check for any invalid headers and return an error before we
 	// potentially pollute our hpack state. (We want to be able to
 	// continue to reuse the hpack encoder for future requests)
