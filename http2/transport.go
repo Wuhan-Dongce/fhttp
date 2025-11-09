@@ -892,12 +892,12 @@ func (fr *Framer) AutoWriteFrames(t *Transport) (inflowValue uint32, nextStreamI
 				nextStreamId = frame.StreamID + uint32(2)
 			}
 		} else if t.Navigator == Firefox {
-			fr.WritePriority(3, PriorityParam{Weight: 200})
+			/*fr.WritePriority(3, PriorityParam{Weight: 200})
 			fr.WritePriority(5, PriorityParam{Weight: 100})
 			fr.WritePriority(7, PriorityParam{Weight: 0})
 			fr.WritePriority(9, PriorityParam{Weight: 0, StreamDep: 7})
 			fr.WritePriority(11, PriorityParam{Weight: 0, StreamDep: 3})
-			fr.WritePriority(13, PriorityParam{Weight: 240})
+			fr.WritePriority(13, PriorityParam{Weight: 240})*/
 			nextStreamId = uint32(15)
 		} else if t.Navigator == Chrome {
 			nextStreamId = uint32(1)
@@ -910,12 +910,12 @@ func (fr *Framer) AutoWriteFrames(t *Transport) (inflowValue uint32, nextStreamI
 		case Firefox:
 			fr.WriteSettings(t.Settings...)
 			fr.WriteWindowUpdate(0, 12517377)
-			fr.WritePriority(3, PriorityParam{Weight: 200})
+			/*fr.WritePriority(3, PriorityParam{Weight: 200})
 			fr.WritePriority(5, PriorityParam{Weight: 100})
 			fr.WritePriority(7, PriorityParam{Weight: 0})
 			fr.WritePriority(9, PriorityParam{Weight: 0, StreamDep: 7})
 			fr.WritePriority(11, PriorityParam{Weight: 0, StreamDep: 3})
-			fr.WritePriority(13, PriorityParam{Weight: 240})
+			fr.WritePriority(13, PriorityParam{Weight: 240})*/
 			return 131072 + 12517377, 15, nil
 
 		case Chrome:
